@@ -300,8 +300,8 @@ class TDClient():
         response = requests.post(
             url="https://api.tdameritrade.com/v1/oauth2/token",
             headers={'Content-Type': 'application/x-www-form-urlencoded'},
-            data=data
-        )
+            data=data, 
+        timeout=60)
 
         if response.ok:
 
@@ -337,8 +337,8 @@ class TDClient():
         response = requests.post(
             url="https://api.tdameritrade.com/v1/oauth2/token",
             headers={'Content-Type': 'application/x-www-form-urlencoded'},
-            data=data
-        )
+            data=data, 
+        timeout=60)
 
         if response.ok:
 
@@ -424,8 +424,8 @@ class TDClient():
         response = requests.post(
             url="https://api.tdameritrade.com/v1/oauth2/token",
             headers={'Content-Type': 'application/x-www-form-urlencoded'},
-            data=data
-        )
+            data=data, 
+        timeout=60)
         
         if response.ok:
 
